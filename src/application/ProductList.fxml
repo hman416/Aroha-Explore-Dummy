@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="483.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProductScreenController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Product List">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="372.0" prefWidth="443.0" spacing="20.0">
+         <children>
+            <ListView fx:id="listOfProducts" prefHeight="329.0" prefWidth="327.0" />
+            <VBox prefHeight="329.0" prefWidth="143.0">
+               <children>
+                  <StackPane prefHeight="185.0" prefWidth="136.0">
+                     <children>
+                        <Button fx:id="addFlightBtn" mnemonicParsing="false" onAction="#addFlightScreen" prefHeight="107.0" prefWidth="100.0" text="Add Flight" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="188.0" prefWidth="214.0">
+                     <children>
+                        <Button fx:id="addHDBtn" mnemonicParsing="false" onAction="#addHotelDealScreen" prefHeight="105.0" prefWidth="99.0" text="Add Hotel Deal" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="79.0" prefWidth="560.0" spacing="70.0">
+         <children>
+            <StackPane prefHeight="36.0" prefWidth="502.0">
+               <children>
+                  <Button fx:id="homeBtn" alignment="CENTER" mnemonicParsing="false" onAction="#returnHome" prefHeight="54.0" prefWidth="102.0" text="Home" />
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="448.0" spacing="30.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddFlightScreenController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Flight">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Airline" />
+            <TextField fx:id="AirlineInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Location" />
+            <TextField fx:id="DepLocInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination Location" />
+            <TextField fx:id="DesLocInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price ($)" />
+            <TextField fx:id="PriceInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="408.0" spacing="50.0">
+         <children>
+            <Button fx:id="confirmBtn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#confirmAddFlight" prefHeight="31.0" prefWidth="99.0" text="Confirm" />
+            <Button fx:id="cancelBtn" alignment="CENTER" mnemonicParsing="false" onAction="#cancelAddFlight" prefHeight="31.0" prefWidth="99.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

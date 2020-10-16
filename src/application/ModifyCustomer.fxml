@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="448.0" spacing="30.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifyCustomerController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Customer">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+            <TextField fx:id="nameInput" prefHeight="31.0" prefWidth="369.0" text="Peter Griffin" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address" />
+            <TextField fx:id="emailInput" prefHeight="31.0" prefWidth="369.0" text="PeterG@gmail.cm" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number" />
+            <TextField fx:id="contactNumInput" prefHeight="31.0" prefWidth="369.0" text="09 123 1234" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit Card Number" />
+            <TextField fx:id="cCNumInput" prefHeight="31.0" prefWidth="369.0" text="2143256721312" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address (optiona))" />
+            <TextField fx:id="addressInput" prefHeight="31.0" prefWidth="369.0" text="24 Peter Griffin Street" />
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="408.0" spacing="50.0">
+         <children>
+            <Button fx:id="confirmBtn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#confirmModifyCustomer" prefHeight="31.0" prefWidth="99.0" text="Confirm" />
+            <Button fx:id="cancelBtn" alignment="CENTER" mnemonicParsing="false" onAction="#cancelModifyCustomer" prefHeight="31.0" prefWidth="99.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

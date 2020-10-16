@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="359.0" prefWidth="448.0" spacing="30.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddHotelDealController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Hotel Deal">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Name" />
+            <TextField fx:id="HotelNameInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Duration (days)" />
+            <TextField fx:id="DurationInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="378.0" spacing="20.0">
+         <children>
+            <Text lineSpacing="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price ($)" />
+            <TextField fx:id="PriceInput" prefHeight="31.0" prefWidth="369.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="408.0" spacing="50.0">
+         <children>
+            <Button fx:id="ConfirmBtn" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#confirmAddHD" prefHeight="31.0" prefWidth="99.0" text="Confirm" />
+            <Button fx:id="CancelBtn" alignment="CENTER" mnemonicParsing="false" onAction="#cancelAdd" prefHeight="31.0" prefWidth="99.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
